@@ -1,2 +1,2 @@
 # JULINT
-Read and write interferogram from ISCE and StaMPS using Julia language
+A Julia package for compressing coregistered Sentinel-1 single look complex (SLC) images from the InSAR Scientific Computing Environment (ISCE) software (Rosen et al., 2012), computing interferogram from the compressed images and select initial pixel candidates based on amplitude dispersion. The output files are saved in format that are readable by the Stanford Method for Persistent Scatterers (StaMPS) software (Hooper et al., 2004; Hooper, 2006) that extract time-series ground displacement of selected PS candidates from the interferograms. 
