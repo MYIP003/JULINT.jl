@@ -115,7 +115,7 @@ function julint_mt_prep_isce(da_thresh::Float64,rg_patches::Int64,az_patches::In
    writedlm(patchlistios,readlines(`sh -c "ls -d PATCH_*"`))
    close(patchlistios);
 
-
+#=
    # Dumping the interferogram (Create pscphase.in)
    # 1st line: width
    # From 2nd line : /media/michelle/Michelle/HK_ASC_2015_2021/StaMPS/INSAR_20181220/*/isce_minrefdem.int
@@ -151,7 +151,7 @@ function julint_mt_prep_isce(da_thresh::Float64,rg_patches::Int64,az_patches::In
    write(pscdemios,string(width,"\n"));
    writedlm(pscdemios,readlines(`sh -c "ls -d $INSARDIR/dem.raw"`));
    close(pscdemios);
-
+=#
 
    # mt_extract_cands
    if dirname == "SMALL_BASELINES"
