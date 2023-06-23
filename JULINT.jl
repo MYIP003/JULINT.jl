@@ -4,7 +4,8 @@ module JULINT
   using LinLogQuantization
   using HDF5
   using DelimitedFiles
-
+  
+  export JULINT_greet
   include("JULINT_r.jl")
   include("JULINT_i2pha.jl")
   include("JULINT_w.jl")
