@@ -5,16 +5,15 @@ module JULINT
   using HDF5
   using DelimitedFiles
 
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_r.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_i2pha.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_w.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_calamp.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_compress.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_selpsc.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_selsbc.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_set_patch.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_imagemath.jl")
-  include("/Users/michelleymw/Desktop/PhD/JULINT/src/JULINT_mt_prep_isce.jl")
+  include("JULINT_r.jl")
+  include("JULINT_i2pha.jl")
+  include("JULINT_w.jl")
+  include("JULINT_calamp.jl")
+  include("JULINT_compress.jl")
+  include("JULINT_selpsc.jl")
+  include("JULINT_selsbc.jl")
+  include("JULINT_set_patch.jl")
+  include("JULINT_imagemath.jl")
+  include("JULINT_mt_prep_isce.jl")
 
 end
-
